@@ -1,0 +1,23 @@
+{
+  "name": "letslearn-dashboard",
+  "version": "1.0.0",
+  "description": "Interview test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyaspangal/letslearn-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyaspangal/letslearn-dashboard/issues"
+  },
+  "homepage": "https://github.com/shreyaspangal/letslearn-dashboard#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1"
+  }
+}
