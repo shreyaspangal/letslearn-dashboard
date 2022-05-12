@@ -2,6 +2,7 @@
 
 ## UI Features - 
 - 3 column layout dashboard system.
+- Mobile responsive layout with interactive navigation menu on the left.
 - On left sidebar you will find smooth animation on hover.
 - On mid section / hero section has 3 divided parts 
   - first being the greeting UI card,
