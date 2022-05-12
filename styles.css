@@ -578,13 +578,7 @@ main .top {
         align-items: center;
     }
 
-    /* HIDE RIGHT SIDEBAR */
-    /* .profile, .fa-circle, .user-class, .user-name, .score, .reminder  {
-        display: none;
-    } */
-
     /* HERO SECTION */
-
     .hero-heading h2 {
         padding-top: 3rem;
     }
