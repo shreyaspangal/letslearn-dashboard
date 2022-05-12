@@ -140,7 +140,6 @@ aside {
 }
 
 aside .top {
-    background-color: #F2F2F2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,7 +159,8 @@ aside .logo img {
 }
 
 /* Hide close icon */
-aside .close {
+aside .close,
+.mobile-nav .open {
     display: none;
 }
 
@@ -290,7 +290,7 @@ main .top {
     margin-top: 2rem;
 }
 
-/* Left section */
+/* Bottom Left section */
 .classes {
     /* hero bottom bg */
     background: #edeff1;
@@ -308,10 +308,10 @@ main .top {
     background-color: #bbc3ca;
 }
 
-/* Right section */
+/* Bottom Right section */
 
 .hero-bottom-right {
-    width: 25vw;
+    /* width: 25vw; */
     margin: 0 auto;
 }
 
@@ -376,6 +376,12 @@ main .top {
     justify-content: end;
     gap: .5rem;
     color: var(--color-info-dark);
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.logout:hover {
+    color: #3A86FF;
 }
 
 /* Profile circle placeholder */
@@ -444,3 +450,157 @@ main .top {
 }
 
 /* -------------------END OF ASIDE RIGHT ------------------ */
+
+/* -------------------MEDIA QUERIES LARGE SCREENS => TABLETS------------------ */
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    /* Remove logo text */
+    aside .logo h2 {
+        display: none;
+    }
+
+    /* Remove icons from sidebar */
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    /* Resize icons from sidebar */
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+
+    .left-sidebar {
+        width: 8vw;
+    }
+
+    aside .sidebar a.active {
+        border-right: none;
+    }
+
+    .right-sidebar {
+        margin-right: 2rem;
+    }
+}
+
+/* -------------------MEDIA QUERIES SMALL SCREENS => TABLETS & MOBILE------------------ */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .left-sidebar {
+        position: fixed;
+        left: -100%;
+        background-color: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+
+    aside .logo {
+        margin-left: 1rem;
+    }
+
+    aside .logo h2 {
+        display: inline;
+    }
+
+    aside .sidebar h3 {
+        display: inline;
+    }
+
+    /* Reset border-right */
+    aside .sidebar a.active {
+        border-right: none;
+        color: #3A86FF;
+    }
+
+    /* For easy to click buttons on mobile */
+    aside .sidebar a {
+        width: 100%;
+        height: 4rem;
+    }
+
+    /* Display close btn */
+    aside .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main {
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
+    /* MOBILE NAV BAR */
+    .right-sidebar .logout {
+        background-color: #fff;
+    }
+
+    #open-btn {
+        display: block;
+        position: fixed;
+        left: 0;
+        z-index: 5;
+        padding-left: 2rem;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        width: 100%;
+        padding: 2rem;
+        background-color: var(--color-white);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 2;
+        box-shadow: var(--box-shadow);
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* HIDE RIGHT SIDEBAR */
+    /* .profile, .fa-circle, .user-class, .user-name, .score, .reminder  {
+        display: none;
+    } */
+
+    /* HERO SECTION */
+
+    .hero-heading h2 {
+        padding-top: 3rem;
+    }
+
+    .hero-text p {
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero-top .right .hero-img {
+        position: relative;
+        top: 0;
+    }
+
+    .hero-bottom-left,
+    .hero-bottom-right {
+        margin-top: 4rem;
+    }
+}

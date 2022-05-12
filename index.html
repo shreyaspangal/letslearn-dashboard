@@ -20,7 +20,7 @@
 
 <body>
     <div class="wrapper">
-        <aside>
+        <aside class="left-sidebar">
             <div class="top">
                 <div class="logo">
                     <img src="assets/svg/logo.svg" alt="logo">
@@ -79,10 +79,11 @@
             </div>
         </aside>
         <!---------------------END OF LEFT ASIDE -------------------->
+        <!---------------------START OF HERO - MAIN -------------------->
         <main>
             <div class="container mb-5">
                 <div class="row d-flex flex-column justify-content-between flex-md-row mb-5">
-                    <div class="col-6 col">
+                    <div class="col-6 col hero-top-heading">
                         <h2 class="h2">My Dashboard</h2>
                     </div>
                     <div class="col-6">
@@ -112,7 +113,7 @@
                 <!-- Hero Bottom Section -->
                 <div class="row hero-bottom">
                     <!-- Hero Bottom Left Section -->
-                    <div class="col-12 col-md-6 hero-bottom-left">
+                    <div class="col-12 col-lg-6 hero-bottom-left">
                         <div class="heading">
                             <h2>Today Classes</h2>
                         </div>
@@ -164,7 +165,7 @@
                         </div>
                     </div>
                     <!-- Hero Bottom Right Section -->
-                    <div class="col-12 col-md-6 hero-bottom-right">
+                    <div class="col-12 col-lg-6 hero-bottom-right">
                         <div class="heading mb-3">
                             <h2>Time Spent</h2>
                         </div>
@@ -197,17 +198,26 @@
                     </div>
                 </div>
         </main>
-        <!---------------------END OF MAIN -------------------->
+        <!---------------------END OF HERO - MAIN -------------------->
+        <!---------------------START OF ASIDE RIGHT -------------------->
         <aside class="right-sidebar">
             <div class="container">
-                <!-- Logout button -->
-                <div class="logout" id="logout-btn">
-                    <div>
-                        Log Out
+                <div class="mobile-nav d-flex justify-content-end align-items-center">
+                    <!-- Hamburger Menu -->
+                    <div class="open" id="open-btn">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
                     </div>
-                    <span class="material-symbols-outlined">
-                        logout
-                    </span>
+                    <!-- Logout button -->
+                    <div class="logout pe-3" id="logout-btn">
+                        <div>
+                            Log Out
+                        </div>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </div>
                 </div>
                 <!-- Profile Section Begins  -->
                 <div class="profile d-flex flex-column justify-content-center align-items-center my-4">
@@ -281,8 +291,10 @@
                 </div>
             </div>
         </aside>
+        <!-- END OF ASIDE RIGHT -->
     </div>
 </body>
 <script src="https://kit.fontawesome.com/ad57504df6.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
 </html>
