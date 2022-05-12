@@ -579,12 +579,19 @@ main .top {
     }
 
     /* HERO SECTION */
+
+    .hero-top {
+        width: 90%;
+        margin: 0 auto;
+        padding-right: 2rem;
+    }
+
     .hero-heading h2 {
         padding-top: 3rem;
     }
 
     .hero-text p {
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
         padding-right: 3rem;
     }
 
