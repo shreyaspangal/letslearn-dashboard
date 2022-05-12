@@ -10,7 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Material Design -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"> -->
     <link rel="stylesheet"
         href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Main CSS -->
@@ -80,16 +80,127 @@
         </aside>
         <!---------------------END OF LEFT ASIDE -------------------->
         <main>
-            <div class="container">
-                <div class="row d-flex flex-column justify-content-between flex-md-row">
+            <div class="container mb-5">
+                <div class="row d-flex flex-column justify-content-between flex-md-row mb-5">
                     <div class="col-6 col">
-                        <h1>My Dashboard</h1>
+                        <h2 class="h2">My Dashboard</h2>
                     </div>
                     <div class="col-6">
                         <input type="search" class="search-bar" placeholder=" What are you looking for?">
                     </div>
                 </div>
             </div>
+            <!-- Hero section begins -->
+            <div class="container mt-5">
+                <!-- Hero Top Section -->
+                <div class="hero-top">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="left col-12 col-md-6">
+                            <div class="hero-heading mb-3">
+                                <h2 class="h2">Good Morning Alice!</h2>
+                            </div>
+                            <div class="hero-text">
+                                <p>“Education is the ability to listen to almost anything without losing your temper or
+                                    your self-confidence.”</p>
+                            </div>
+                        </div>
+                        <div class="right col-12 col-md-6">
+                            <img class="hero-img" src="assets/svg/hero.svg" alt="hero">
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Bottom Section -->
+                <div class="row hero-bottom">
+                    <!-- Hero Bottom Left Section -->
+                    <div class="col-12 col-md-6 hero-bottom-left">
+                        <div class="heading">
+                            <h2>Today Classes</h2>
+                        </div>
+                        <div class="classes-stack">
+                            <div class="class1 classes">
+                                <div class="class-wrapper d-flex align-items-center justify-content-between">
+                                    <div class="wrap-left d-flex  align-items-center">
+                                        <div class="class-box"></div>
+                                        <div class="text-box">Physics - Chapter 5</div>
+                                    </div>
+                                    <div class="progress-box">
+                                        <svg>
+                                            <circle cx="38" cy="38" r="25"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            75%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class2 classes">
+                                <div class="class-wrapper d-flex align-items-center justify-content-between">
+                                    <div class="wrap-left d-flex  align-items-center">
+                                        <div class="class-box"></div>
+                                        <div class="text-box">Mathematics - Unit 3</div>
+                                    </div>
+                                    <div class="progress-box">
+                                        <svg>
+                                            <circle cx="38" cy="38" r="25"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            100%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class3 classes">
+                                <div class="class-wrapper d-flex align-items-center justify-content-between">
+                                    <div class="wrap-left d-flex  align-items-center">
+                                        <div class="class-box"></div>
+                                        <div class="text-box">Biology - Chapter 4</div>
+                                    </div>
+                                    <div class="progress-box">
+                                        <svg>
+                                            <circle cx="38" cy="38" r="25"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            20%
+                                        </div>
+                                        <!-- <img src="assets/svg/20-percent-progress.svg" alt="20%" height="60px"> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero Bottom Right Section -->
+                    <div class="col-12 col-md-6 hero-bottom-right">
+                        <div class="heading mb-3">
+                            <h2>Time Spent</h2>
+                        </div>
+                        <div class="time-stack d-flex flex-column align-items-center ">
+                            <div class="heading mt-5">
+                                <p>Good job, keep going! </p>
+                            </div>
+                            <div class="pie-chart">
+                                <img src="assets/svg/pie-chart.svg" alt="pie chart">
+                            </div>
+                            <div class="legend">
+                                <div class="legend1 d-flex align-items-center mb-2">
+                                    <i class="fa-solid fa-square-full pe-2"></i>
+                                    <div>Mathematics - 45 mins</div>
+                                </div>
+                                <div class="legend2 d-flex align-items-center mb-2">
+                                    <i class="fa-solid fa-square-full pe-2"></i>
+                                    <div>Physics - 1 hours 2 mins</div>
+                                </div>
+                                <div class="legend3 d-flex align-items-center mb-2">
+                                    <i class="fa-solid fa-square-full pe-2"></i>
+                                    <div>Biology - 2 hours 5 mins</div>
+                                </div>
+                                <div class="legend4 d-flex align-items-center mb-2">
+                                    <i class="fa-solid fa-square-full pe-2"></i>
+                                    <div>Language - 40 mins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </main>
         <!---------------------END OF MAIN -------------------->
         <aside class="right-sidebar">
@@ -106,8 +217,8 @@
                 <!-- Profile Section Begins  -->
                 <div class="profile d-flex flex-column justify-content-center align-items-center my-4">
                     <i class="fa-solid fa-circle"></i>
-                    <h3 class="mt-4 user-name">Shreyas Pangal</h3>
-                    <small class="mt-1 user-class">Student Grade 12</small>
+                    <h3 class="mt-4 user-name">Alice Potter</h3>
+                    <small class="mt-1 user-class">Student Grade 8</small>
                 </div>
                 <!-- Score Section -->
                 <div class="score">
@@ -131,8 +242,8 @@
                         <div class="text-box">Mathematics - Unit 3</div>
                     </div>
                     <div class="content d-flex align-items-center">
-                        <div class="number-box">8.5</div>
-                        <div class="text-box">Physics - Chapter 5</div>
+                        <div class="number-box red-box">2.0</div>
+                        <div class="text-box">Biology - Chapter 4</div>
                     </div>
                 </div>
                 <!-- Reminder Section -->
@@ -149,16 +260,28 @@
                         </div>
                     </div>
                     <div class="content d-flex align-items-center">
-                        <div class="number-box">8.5</div>
-                        <div class="text-box">Physics - Chapter 5</div>
+                        <div class="number-box icon-box red-box">
+                            <span class="material-symbols-outlined">
+                                error
+                            </span>
+                        </div>
+                        <div class="text-box">Physics Homework</div>
                     </div>
                     <div class="content d-flex align-items-center">
-                        <div class="number-box">8.5</div>
-                        <div class="text-box">Physics - Chapter 5</div>
+                        <div class="number-box icon-box">
+                            <span class="material-symbols-outlined">
+                                chat
+                            </span>
+                        </div>
+                        <div class="text-box">Teacher Amy's message</div>
                     </div>
                     <div class="content d-flex align-items-center">
-                        <div class="number-box">8.5</div>
-                        <div class="text-box">Physics - Chapter 5</div>
+                        <div class="number-box icon-box">
+                            <span class="material-symbols-outlined">
+                                chat
+                            </span>
+                        </div>
+                        <div class="text-box">Teacher James message</div>
                     </div>
                 </div>
             </div>
