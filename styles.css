@@ -604,4 +604,9 @@ main .top {
     .hero-bottom-right {
         margin-top: 4rem;
     }
+
+    /* Right sidebar */
+    .right-sidebar {
+        width: 100%;
+    }
 }
